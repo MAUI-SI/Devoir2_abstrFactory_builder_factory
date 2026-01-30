@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Devoir2_abstrFactory_builder_factory.Data.Product.Basement
 {
-    internal class QuebecoisBasement
+    internal class QuebecoisBasement: IBasement
     {
     }
 }
