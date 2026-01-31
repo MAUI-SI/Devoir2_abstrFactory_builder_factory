@@ -1,8 +1,6 @@
 ﻿
 using AbstractFactory;
-using Builder.v2;
-using Data.v2;
-using FactoryMethod.v2.Basement;
+
 using System.Diagnostics;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 

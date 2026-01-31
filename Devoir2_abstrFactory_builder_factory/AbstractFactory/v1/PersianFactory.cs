@@ -1,4 +1,5 @@
-﻿using Data.v1.Product.Basement;
+﻿using Data.v1.Building;
+using Data.v1.Product.Basement;
 using Data.v1.Product.Interior;
 using Data.v1.Product.Roof;
 using Data.v1.Product.Structure;
@@ -10,23 +11,15 @@ namespace AbstractFactory.v1
 {
     internal class PersianFactory: IAbstractFactory
     {
-        public IBasement makeBasement()
+
+        public House makeHouse()
         {
-            return new PersianBasement();
-        }
-        public IStructure makeStructure()
-        {
-            return new PersianStructure();
+            throw new NotImplementedException();
         }
 
-        public IInterior makeInterior()
+        public Duplex makeDuplex()
         {
-            return new PersianInterior();
-        }
-
-        public IRoof makeRoof()
-        {
-            return new PersianRoof();
+            throw new NotImplementedException();
         }
     }
 }

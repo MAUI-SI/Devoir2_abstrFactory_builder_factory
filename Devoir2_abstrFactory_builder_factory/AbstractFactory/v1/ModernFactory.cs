@@ -1,4 +1,5 @@
 ﻿
+using Data.v1.Building;
 using Data.v1.Product.Basement;
 using Data.v1.Product.Interior;
 using Data.v1.Product.Roof;
@@ -11,24 +12,14 @@ namespace AbstractFactory.v1
 {
     internal class ModernFactory : IAbstractFactory
     {
-        public IBasement makeBasement()
+        public Duplex makeDuplex()
         {
-            return new ModernBasement();
+            throw new NotImplementedException();
         }
 
-        public IInterior makeInterior()
+        public House makeHouse()
         {
-            return new ModernInterior();
-        }
-
-        public IRoof makeRoof()
-        {
-            return new ModernRoof();
-        }
-
-        public IStructure makeStructure()
-        {
-            return new ModernStructure();
+            throw new NotImplementedException();
         }
     }
 }

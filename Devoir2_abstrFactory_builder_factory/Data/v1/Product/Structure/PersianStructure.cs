@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace v1.Product.Structure
+namespace Data.v1.Product.Structure
 {
     internal class PersianStructure : IStructure
     {

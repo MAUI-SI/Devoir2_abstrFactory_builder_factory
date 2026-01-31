@@ -1,4 +1,5 @@
 ﻿
+using Data.v1.Building;
 using Data.v1.Product.Basement;
 using Data.v1.Product.Interior;
 using Data.v1.Product.Roof;
@@ -11,25 +12,15 @@ namespace AbstractFactory.v1
 {
     internal class QuebecoisFactory : IAbstractFactory
     {
-        public IBasement makeBasement()
+
+        public House makeHouse()
         {
-            return new QuebecoisBasement();
-        }
-        public IStructure makeStructure()
-        {
-            return new QuebecoisStructure();
+            throw new NotImplementedException();
         }
 
-        public IInterior makeInterior()
+        public Duplex makeDuplex()
         {
-            return new QuebecoisInterior();
+            throw new NotImplementedException();
         }
-
-        public IRoof makeRoof()
-        {
-            return new QuebecoisRoof();
-        }
-
-
     }
 }
