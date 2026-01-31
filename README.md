@@ -357,7 +357,6 @@ Le diagramme doit montrer les relations entre entites suivantes :
 #### building component
 - [x] Implementation des interfaces (IBasement, IStructure, IInterior, IRoof)
 - [x] Implementation des subclass des interfaces 
-- [ ]
 
 #### building (house, duplex)
 - [x] Implementation des champs (IBasement, IStructure, IInterior, IRoof)
@@ -365,20 +364,18 @@ Le diagramme doit montrer les relations entre entites suivantes :
 
 
 ### Factory method
-
 - [x] Implementations des FactoryMethods et du switch case
 
+### Abstract Factory
+
+- [x] Implementation de l'interface IAbstractFactory
+- [ ] Implementation de subclass {QuebecoisFactory, PersianFactory, ModernFactory}
 
 ### Builder
 
-- [ ] Integration des classes concretes et complètes (House ou Duplex)
-- [ ] Integration du builder()
-- [ ] Intergation d'un directeur pour définir l'ordre de construction
+- [x] Implementation de IBuilder, IHouseBuilder et IDuplexBuilder
+- [ ] Implementation de directeur
       
-### Abstract Factory
 
-- [ ] Créée de factory selon les styles et non le type d'objet
-
-[^GoF]: GoF est <...>
 
 
