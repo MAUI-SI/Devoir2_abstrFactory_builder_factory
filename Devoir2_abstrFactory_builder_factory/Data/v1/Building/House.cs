@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Data.v1.Product;
-
+using FactoryMethod.v1;
 
 
 namespace Data.v1.Building
@@ -20,21 +20,21 @@ namespace Data.v1.Building
 
         public void setBasement(ProductType type)
         {
-           
+            this.basement = FactoryBasement.Factory(type);
         }
 
         public void setInterior(ProductType type)
         {
-            this.interior = interior;
+            this.interior = FactoryInterior.Factory(type);
         }
         public void setStructure(ProductType type)
         {
-            this.structure = structure;
+            this.structure = FactoryStructure.Factory(type);
         }
 
         public void setRoof(ProductType type)
         {
-            this.roof = roof;
+            this.roof = FactoryRoof.Factory(type);
         }
         public string Display() // for test
         {
